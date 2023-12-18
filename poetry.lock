@@ -21,6 +21,22 @@ test = ["anyio[trio]", "coverage[toml] (>=7)", "exceptiongroup (>=1.2.0)", "hypo
 trio = ["trio (>=0.23)"]
 
 [[package]]
+name = "azure-ai-language-conversations"
+version = "1.1.0"
+description = "Microsoft Azure Conversational Language Understanding Client Library for Python"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "azure-ai-language-conversations-1.1.0.zip", hash = "sha256:d3b996bd7134da32db8ade1d5371fac7143b968572ed4c0fa62768d7494b831f"},
+    {file = "azure_ai_language_conversations-1.1.0-py3-none-any.whl", hash = "sha256:b96797bbc46f8a03fd5807d225b765d474b67a271727ee2bd6387a450e383c2b"},
+]
+
+[package.dependencies]
+azure-core = ">=1.24.0,<2.0.0"
+isodate = ">=0.6.1,<1.0.0"
+typing-extensions = ">=4.0.1"
+
+[[package]]
 name = "azure-ai-language-questionanswering"
 version = "1.1.0"
 description = "Microsoft Azure Question Answering Client Library for Python"
@@ -219,6 +235,20 @@ files = [
 six = "*"
 
 [[package]]
+name = "python-dateutil"
+version = "2.8.2"
+description = "Extensions to the standard Python datetime module"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+files = [
+    {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
+    {file = "python_dateutil-2.8.2-py2.py3-none-any.whl", hash = "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"},
+]
+
+[package.dependencies]
+six = ">=1.5"
+
+[[package]]
 name = "python-dotenv"
 version = "1.0.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -305,4 +335,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "a3600f40d6d381d152da785ad1927e91844fe580547ce5dc20aa872e633ef6af"
+content-hash = "edf4d5718892bb61209b85f6cb61cf60a0cafbfdc0327f5c9b660cf17937d618"
